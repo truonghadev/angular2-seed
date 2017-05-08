@@ -1,6 +1,7 @@
 <h3>Hero Component</h3>
 <p>Welcome to Angular Seed</p>
 <h2>Heroes</h2>
+<!-- <button (click)="getHeroes()">Get</button> -->
 <hero-detail [hero]="selectedHero"></hero-detail>
 <ul class="heroes">
   <li *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.selected]="hero === selectedHero">

@@ -10,6 +10,7 @@ import { HttpModule } from '@angular/http';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { HeroComponent } from './hero/hero.component';
+import { HeroService } from './hero/hero.service';
 import { HeroDetailComponent } from './hero/hero-detail.component';
 import { RepoBrowserComponent } from './github/repo-browser/repo-browser.component';
 import { RepoListComponent } from './github/repo-list/repo-list.component';
@@ -37,7 +38,8 @@ import { ContactComponent } from './contact/contact.component';
     RouterModule.forRoot(rootRouterConfig, { useHash: true })
   ],
   providers: [
-    GithubService
+    GithubService,
+    HeroService
   ],
   bootstrap: [ AppComponent ]
 })

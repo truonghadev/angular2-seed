@@ -11,7 +11,7 @@ import { ContactComponent } from './contact/contact.component';
 export const rootRouterConfig: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'hero', component: HeroComponent },
+  { path: 'hero', component: HeroComponent},
   { path: 'about', component: AboutComponent },
   { path: 'github', component: RepoBrowserComponent,
     children: [
